@@ -24,6 +24,23 @@ you will need to change the steps per axis to 200 from 100 because a 0.9 degree 
 
 Change line 739 to the following: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 280 }
 
+Configuration_adv.h
+
+If your new motors are 1A no need to change the current. The LDO 0.9 degree motors are 1.4A which is greater than the stock Prusa motors so you'll need to adjust the current. 
+
+Change line 2003 to:  #define X_CURRENT       1000
+Change line 2004 to:  #define X_CURRENT_HOME   350
+Change line 2019 to:  #define Y_CURRENT       1100
+Change line 2020 to:  #define X_CURRENT_HOME   400
+
+This also means we need to tweak stallgurad settings.
+
+Change line 2294 to: #define X_STALL_SENSITIVITY  60
+Change line 2296 to: #define Y_STALL_SENSITIVITY  80
+
+I don't have any other 0.9 degree motors to test so you'll have to test your own stallgurad values. Lower increases sensitivity so if the axis keeps crashign lower the number 
+if you're getting false positives raise tha value.
+
 
 
 Adding Z height:
@@ -43,4 +60,30 @@ Configuration.h
 If you want to change from 7x7 leveling to 5x5 or 11x11 or whatever you'd need to edit the GRID MAX
 
 Change line 1247 to the following #define GRID_MAX_POINTS_X 5 or #define GRID_MAX_POINTS_X 11
+
+
+
+Adding the BIGTREETECH TFT35
+
+Configuration.h
+
+Comment out the stock Prusa Screen by going to line 1762
+
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
+
+Comment in line 1902
+
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+
+Configuration_adv.h
+
+Comment in line 1451
+
+#define BABYSTEP_ZPROBE_GFX_OVERLAY
+
+
+
+
+
+
 
