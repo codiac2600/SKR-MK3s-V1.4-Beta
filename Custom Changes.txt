@@ -1,0 +1,46 @@
+Here is a cheat sheet for changing things for specific hardware you may have that differs from the precompiled variants.
+
+LDO Geared Extruder motor: 
+
+Configuration.h
+
+You will need to change esteps becaue of the 3.7:1 gear ratio which is 980 esteps at 32x microstepping
+
+Change line 739 to the following: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 980 }
+
+BMG is 830 at 32x with a 1.8 degree motor
+BMG is 830 at 16x and 1660 at 32x with a 0.9 degree motor but you're better off changing the microstepping to 16x and staying at 830 esteps
+Bunny Science extruder addon is 980 at 32x with a 1.8 degree motor
+MK3s or Bear extruder is 280 steps at 32x with a 1.8 degree motor
+Hemera is 409 at 16x or 818 at 32x with a 1.8 degree motor
+
+
+
+Adding 0.9 degree steppers to XY:
+
+Configuration.h
+
+you will need to change the steps per axis to 200 from 100 because a 0.9 degree stepper has 2x the resolution
+
+Change line 739 to the following: #define DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 400, 280 }
+
+
+
+Adding Z height:
+
+Configuration.h
+
+If you modify your Z axis by extending the Z and adding taller motors like a zaribo/bear 320 you would need to change the Z height.
+
+Change line 1098 to the following: #define Z_MAX_POS 320
+
+
+
+Changing number of probe points:
+
+Configuration.h
+
+If you want to change from 7x7 leveling to 5x5 or 11x11 or whatever you'd need to edit the GRID MAX
+
+Change line 1247 to the following #define GRID_MAX_POINTS_X 5 or #define GRID_MAX_POINTS_X 11
+
