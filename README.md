@@ -18,20 +18,20 @@ editing the firmware for your personal needs.
 
 Have fun and happy printing!
 
-**SKR V1.4 and SKR V1.4 Turbo case for Prusa Bear Frame
+**SKR V1.4 and SKR V1.4 Turbo case for Prusa Bear Frame**
 
 https://www.prusaprinters.org/prints/20416-skr-bear-case/files
 
-**Prusa Bear Project:
+**Prusa Bear Project:**
 
 https://github.com/gregsaun
 
-**Marlin Firmware:
+**Marlin Firmware:**
 
 http://marlinfw.org
 
 
-**To Do List:
+**To Do List:**
 
 1. BOM coming soon!
 2. BL Touch firmwares
