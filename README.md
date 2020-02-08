@@ -10,6 +10,8 @@ expressed or given.
 If you're converting a stock Prusa MK3s/MK3/MK2.5s/MK2.5 you must realize that this will most likely void your warranty 
 from Prusa so be warned that there may be no going back.
 
+***warning**
+
 Please read through everything included and I'll hopefully continue updating this as Marlin releases new updates. The firmware
 is stable and works great. I've enabled every feature I could think possible and included a Wiring guide and a cheat sheet for 
 editing the firmware for your personal needs. 
@@ -20,4 +22,18 @@ SKR V1.4 and SKR V1.4 Turbo case for Prusa Bear Frame
 
 https://www.prusaprinters.org/prints/20416-skr-bear-case/files
 
-BOM coming soon!
+Prusa Bear Project:
+
+https://github.com/gregsaun
+
+Marlin Firmware:
+
+http://marlinfw.org
+
+
+To Do List:
+
+1. BOM coming soon!
+2. BL Touch firmwares
+3. More how to on Marlin setup
+4. TFT35 Bear case coming soon!
