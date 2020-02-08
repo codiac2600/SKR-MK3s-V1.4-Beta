@@ -15,3 +15,9 @@ is stable and works great. I've enabled every feature I could think possible and
 editing the firmware for your personal needs. 
 
 Have fun and happy printing!
+
+SKR V1.4 and SKR V1.4 Turbo case for Prusa Bear Frame
+
+https://www.prusaprinters.org/prints/20416-skr-bear-case/files
+
+BOM coming soon!
