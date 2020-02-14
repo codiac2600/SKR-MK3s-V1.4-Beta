@@ -1,0 +1,42 @@
+BTT ESP-01S Wifi Module Add on.
+
+This is not straight forward so bare with me as this guide was built with much frustration and lots of help from the BIGTREE facebook page. Thanks to one post by Ang Chun Yong on the Bigtree facebook group that got me half way there. 
+
+I've uploaded images from Marlin 2.0.3 with the changes for reference so check those if the text isn't helping you.
+
+Step 1: the easy stuff
+
+Configuration.h changes:
+
+Line 106: #define SERIAL_PORT 3
+Line 115: #define SERIAL_PORT_2 -1
+
+Line 126: #define BAUDRATE 115200
+
+Serial Port 3 enables the Wifi port and -1 enables the USB port. You can now use both at the same time.
+
+Step 2: easier yet
+
+Configuration_adv.h changes:
+
+Line 3004: #define ESP3D_WIFISUPPORT
+
+Just need to enable the ESP3D wifi module
+
+Step 3: The hard stuff
+
+I used the search in Windows and searched for hardwareserial.h which was hidden deep. It was in Users > .platformio > packages > framework-arduino-lpc176X > cores > Arduino > HARDWARESERIAL.h
+
+You have to assign the pins in UART 3 so your final result is the following:
+
+Line 107: PinCfg.Funcnum = 3;
+Line 110: PinCfg.Pinnum = 28;
+Line 111: PinCfg.Portnum = 4;
+Line 113: PinCfg.Pinnum = 29;
+
+Compile your firmware as you please.
+
+Next head over to the ESP Firmware Update txt file and read the direction to update the firmware of the module.
+
+
+
