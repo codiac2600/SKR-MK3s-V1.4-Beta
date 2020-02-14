@@ -31,7 +31,7 @@ Step 3: The hard stuff
 I used the search in Windows and searched for hardwareserial.h which was hidden deep. It was in Users > .platformio > 
 packages > framework-arduino-lpc176X > cores > Arduino > HARDWARESERIAL.h
 
-You have to assign the pins in UART 3 so your final result is the following:
+You have to assign the pins in UART 3 in hardwareserial.h so your final result is the following:
 
 Line 107: PinCfg.Funcnum = 3;
 Line 110: PinCfg.Pinnum = 28;
@@ -39,6 +39,8 @@ Line 111: PinCfg.Portnum = 4;
 Line 113: PinCfg.Pinnum = 29;
 
 Compile your firmware as you please.
+
+Remeber that I have images of each step for clarification.
 
 Next head over to the ESP Firmware Update txt file and read the direction to update the firmware of the module.
 
