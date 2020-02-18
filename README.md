@@ -12,6 +12,8 @@ from Prusa so be warned that there may be no going back.
 
 *****warning*****
 
+NOTE THAT ALL FIRMWARE HERE IS FOR STABLE MARLIN 2.0.3 AND NOT BUGFIX.  
+
 Please read through everything included and I'll hopefully continue updating this as Marlin releases new updates. The firmware
 is stable and works great. I've enabled every feature I could think possible and included a Wiring guide and a cheat sheet for 
 editing the firmware for your personal needs. 
