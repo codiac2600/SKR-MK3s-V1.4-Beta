@@ -1,0 +1,40 @@
+To enable BL Touch do the following changes:
+
+Configuration.h
+
+Define BL Touch line 894
+
+From //#define BLTOUCH to #define BLTOUCH
+
+
+Change probe offset Line 958
+
+Bear BL Touch Extruder by Vertigo 235 https://www.prusaprinters.org/prints/6606-bear-extruder-bltouch-mount
+
+#define NOZZLE_TO_PROBE_OFFSET { 30, 10, 0 }
+
+BL Touch for BMG Extruder by Vertigo 235 https://www.prusaprinters.org/prints/6623-bltouch-mount-for-bondtech-prusa-extruder
+
+#define NOZZLE_TO_PROBE_OFFSET { -24.3, -34.1, 0 }
+
+
+Edit Z clearance for BL Touch lines 999-1002
+
+#define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
+#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
+#define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
+#define Z_AFTER_PROBING             5
+
+
+Configuration_adv.h
+
+
+Enable BL Touch High Speed mode (V3.1 or better) line 658
+
+From //#define BLTOUCH_HS_MODE to #define BLTOUCH_HS_MODE
+
+
+
+For the BMG BL Touch add-on ONLY change the Z Stepper Align XY Positions Line 672
+
+From #define Z_STEPPER_ALIGN_XY { {  35, 105 }, { 235,  105 } } to #define Z_STEPPER_ALIGN_XY { {  10, 105 }, { 220,  105 } }
