@@ -1,0 +1,6 @@
+These are the base configs for Marlin 2.0.4.2 for the SKR V1.4 MK3 project
+
+This is untested as of 02/23/2020
+
+Custom Commands section is enabled and ready for testing. You cna import these into 2.0.3 but are not fully stable yet
+so please test and give feedback on them.
