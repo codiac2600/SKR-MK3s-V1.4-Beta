@@ -35,7 +35,7 @@ http://marlinfw.org
 
 **To Do List:**
 
-~~1. BOM coming soon!~~
+1. ~~BOM coming soon!~~
 2. BL Touch firmwares
 3. More how to on Marlin setup
 4. TFT35 Bear case coming soon!
