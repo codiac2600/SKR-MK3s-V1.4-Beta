@@ -1,0 +1,8 @@
+This firmware is deisgned for the following hardware:
+
+Prusa MK3s Bear
+Filament Sensor
+Pinda V2
+Stock Bear Extruder or MK3s Extruder
+Stock Discount Reprap smart controller LCD
+Stock 1.8 Degree 1A motors on XYZ

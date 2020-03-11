@@ -1,9 +1,0 @@
-This firmware is deisgned for the following hardware:
-
-SKR V1.4 Turbo Board
-Prusa MK3s Bear
-Filament Sensor
-Pinda V2
-Bondtech BMG Extruder w/ 1.8 degree extruder motor
-Stock Discount Reprap smart controller LCD
-Stock 1.8 Degree 1A motors on XYZ
