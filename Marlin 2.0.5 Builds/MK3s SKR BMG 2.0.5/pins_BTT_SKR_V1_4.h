@@ -79,20 +79,14 @@
     #define Z_MIN_PIN      P1_00   // PWRDET
   #endif
 #else
-  #ifndef Z_STOP_PIN
-    #define Z_STOP_PIN     P1_10   // Z-STOP
-  #endif
+  #define Z_STOP_PIN       P0_10   // Z-STOP
 #endif
 
 //
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #if Z_STOP_PIN != P1_27
-    #define Z_MIN_PROBE_PIN P1_27
-  #else
-    #define Z_MIN_PROBE_PIN P0_10
-  #endif
+  #define Z_MIN_PROBE_PIN  P0_10
 #endif
 
 //
