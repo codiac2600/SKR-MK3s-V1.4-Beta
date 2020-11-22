@@ -28,6 +28,8 @@ Just need to enable the ESP3D wifi module
 
 Step 3: The hard stuff
 
+If you missing hardwareserial.h you can add with git inside VS clone from : https://github.com/p3p/pio-framework-arduino-lpc176x 
+
 I used the search in Windows and searched for hardwareserial.h which was hidden deep. It was in Users > .platformio > 
 packages > framework-arduino-lpc176X > cores > Arduino > HARDWARESERIAL.h
 
